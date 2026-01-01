@@ -889,5 +889,46 @@
   button {
     min-height: 44px;
   }
+ /* ========================= */
+/* MOBILE HERO LAYOUT FIX */
+/* ========================= */
+@media (max-width: 768px) {
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-top: 160px; /* space for logo */
+      padding-bottom: 60px;
+    }
+  
+    .hero-content {
+      max-width: 100%;
+      text-align: center;
+      z-index: 3;
+    }
+  }
+  @media (max-width: 768px) {
+    .center-logo {
+      top: 30%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .center-logo img {
+      width: 180px;
+    }
+  
+    .brand-name {
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+  }
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 26px;
+      line-height: 1.2;
+      margin-top: 20px;
+    }
+  }
 
   
