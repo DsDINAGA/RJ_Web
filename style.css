@@ -569,8 +569,8 @@
     border-radius: inherit;
     background: linear-gradient(
         135deg,
-        rgba(255, 255, 255, 0.2),
-        rgba(200, 200, 200, 0.1)
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.1)
     );
     pointer-events: none;
     z-index: -1;
