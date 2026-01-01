@@ -906,7 +906,7 @@
   }
 
   .hero-content {
-    margin-top: 180px; /* adds space below logo */
+    margin-top: 300px; /* adds space below logo */
     text-align: center; /* optional for mobile */
   }
 }
