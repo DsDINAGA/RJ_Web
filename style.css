@@ -901,12 +901,12 @@
 @media (max-width: 768px) {
   /* Move logo higher for more gap */
   .center-logo {
-    top: 25%; /* move it up */
+    top: 15%; /* move it up */
     transform: translate(-50%, -50%);
   }
 
   .hero-content {
-    margin-top: 300px; /* adds space below logo */
+    margin-top: 500px; /* adds space below logo */
     text-align: center; /* optional for mobile */
   }
 }
