@@ -847,7 +847,7 @@
       justify-content: center;
     }
   
-    .play-btn {
+    .play-btn {color: white;
       padding: 14px 26px;
       font-size: 15px;
     }
