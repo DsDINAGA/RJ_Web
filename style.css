@@ -901,7 +901,7 @@
 @media (max-width: 768px) {
   /* Move logo higher for more gap */
   .center-logo {
-    top: 15%; /* move it up */
+    top: 5%; /* move it up */
     transform: translate(-50%, -50%);
   }
 
