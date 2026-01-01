@@ -897,47 +897,35 @@
 /* MOBILE HERO LAYOUT FIX */
 /* ========================= */
 @media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 220px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
 
-    .hero {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding-top: 220px; /* space for logo */
-      padding-bottom: 60px;
-    }
-  
-    .hero-content {
-      max-width: 100%;
-      text-align: center;
-      z-index: 3;
-    }
+  .center-logo {
+    top: 20%;
+    transform: translate(-50%, -50%);
   }
-  @media (max-width: 768px) {
-    .center-logo {
-      top: 30%;
-      transform: translate(-50%, -50%);
-    }
-  
-    .center-logo img {
-      width: 180px;
-    }
-  
-    .brand-name {
-      font-size: 14px;
-      letter-spacing: 2px;
-    }
+
+  .center-logo img {
+    width: 180px;
   }
-  @media (max-width: 768px) {
-    .hero-content {
-      margin-top: 60px; /* space between logo & text */
-    }
-  
-    .hero-title {
-      font-size: 26px;
-      line-height: 1.25;
-      margin-top: 0; /* reset */
-    }
+
+  .hero-content {
+    margin-top: 60px;
+    z-index: 3;
   }
-  
+
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.25;
+    margin-top: 0;
+  }
+}
+
 
   
