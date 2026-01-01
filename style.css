@@ -350,7 +350,7 @@
     /* Info card moves below */
     .info-card {
       position: static;
-      margin-top: 70px;
+      margin-top: 40px;
       width: 100%;
     }
   
@@ -905,7 +905,7 @@
     .hero-content {
       max-width: 100%;
       text-align: center;
-      z-index: 6;
+      z-index: 3;
     }
   }
   @media (max-width: 768px) {
