@@ -897,5 +897,29 @@
   }
  
 
+/* Mobile adjustments for hero logo and content */
+@media (max-width: 768px) {
+  /* Move logo higher for more gap */
+  .center-logo {
+    top: 25%; /* move it up */
+    transform: translate(-50%, -50%);
+  }
+
+  .hero-content {
+    margin-top: 180px; /* adds space below logo */
+    text-align: center; /* optional for mobile */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .center-logo {
+    top: 20%;
+  }
+
+  .hero-content {
+    margin-top: 150px;
+  }
+}
 
   
