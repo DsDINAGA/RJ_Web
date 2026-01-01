@@ -813,13 +813,16 @@
 /* MOBILE HERO LOGO FIX */
 /* ========================= */
 @media (max-width: 768px) {
-    .center-logo {
-      top: 45%;
-    }
-  
-    .center-logo img {
-      width: 220px; /* was too big */
-    }
+  .center-logo {
+    top: 20%; /* MOVE LOGO UP = MORE GAP */
+    transform: translate(-50%, -50%);
+  }
+
+  .center-logo img {
+    width: 180px;
+  }
+
+
   
     .brand-name {
       font-size: 16px;
@@ -899,7 +902,7 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      padding-top: 260px; /* space for logo */
+      padding-top: 220px; /* space for logo */
       padding-bottom: 60px;
     }
   
@@ -925,11 +928,16 @@
     }
   }
   @media (max-width: 768px) {
+    .hero-content {
+      margin-top: 60px; /* space between logo & text */
+    }
+  
     .hero-title {
       font-size: 26px;
-      line-height: 1.2;
-      margin-top: 500px;
+      line-height: 1.25;
+      margin-top: 0; /* reset */
     }
   }
+  
 
   
