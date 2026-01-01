@@ -831,6 +831,8 @@
   }
   @media (max-width: 768px) {
     .hero {
+      top: 20%;
+
       padding: 120px 20px;
       text-align: center;
     }
