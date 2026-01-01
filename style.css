@@ -930,55 +930,5 @@
       margin-top: 20px;
     }
   }
- /* ========================= */
-/* MOBILE PERFORMANCE MODE */
-/* ========================= */
-@media (max-width: 768px) {
 
-    /* Disable heavy blur on mobile */
-    .navbar,
-    .hero-card,
-    .info-card,
-    .booking-panel,
-    .card-inner {
-      backdrop-filter: none !important;
-      background: rgba(20,20,20,0.75) !important;
-    }
-  
-    /* Reduce hero overlay complexity */
-    .overlay {
-      background: rgba(0,0,0,0.55);
-    }
-  }
-  @media (max-width: 768px) {
-    * {
-      animation-duration: 0.001ms !important;
-      animation-iteration-count: 1 !important;
-    }
-  }
-  .hero {
-    background-image: url("home.jpg");
-  }
-  
-  @media (max-width: 768px) {
-    .hero {
-      background-image: url("home-mobile.jpg"); /* smaller image */
-    }
-  }
-  @media (max-width: 768px) {
-    .home-video,
-    .card-inner,
-    .img-box {
-      box-shadow: 0 12px 25px rgba(0,0,0,0.6);
-    }
-  }
-  body {
-    overscroll-behavior: none;
-    -webkit-overflow-scrolling: touch;
-  }
-  @media (max-width: 768px) {
-    .parallax {
-      transform: none !important;
-    }
-  }
   
