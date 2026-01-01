@@ -814,7 +814,7 @@
 /* ========================= */
 @media (max-width: 768px) {
   .center-logo {
-    top: 30%; /* MOVE LOGO UP = MORE GAP */
+    top: 10%; /* MOVE LOGO UP = MORE GAP */
     transform: translate(-50%, -50%);
   }
 
