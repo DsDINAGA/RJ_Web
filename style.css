@@ -897,29 +897,37 @@
   }
  
 
-/* Mobile adjustments for hero logo and content */
+/* MOBILE HERO LOGO AND CONTENT OPTIMIZATION */
 @media (max-width: 768px) {
-  /* Move logo higher for more gap */
+  .hero {
+    padding-top: 250px; /* increase top padding to create gap for logo */
+    text-align: center;
+  }
+
   .center-logo {
-    top: 5%; /* move it up */
-    transform: translate(-50%, -50%);
+    top: 100px; /* adjust logo position relative to top */
+    transform: translateX(-50%);
   }
 
   .hero-content {
-    margin-top: 500px; /* adds space below logo */
-    text-align: center; /* optional for mobile */
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 
-/* Extra small screens */
 @media (max-width: 480px) {
+  .hero {
+    padding-top: 200px; /* smaller screens need less padding */
+  }
+
   .center-logo {
-    top: 20%;
+    top: 80px;
   }
 
   .hero-content {
-    margin-top: 150px;
+    max-width: 95%;
   }
 }
+
 
   
