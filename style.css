@@ -905,7 +905,7 @@
     .hero-content {
       max-width: 100%;
       text-align: center;
-      z-index: 3;
+      z-index: 6;
     }
   }
   @media (max-width: 768px) {
