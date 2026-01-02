@@ -1,3 +1,7 @@
+function isIOS() {
+  return /iPad|iPhone|iPod/.test(navigator.userAgent);
+}
+
 // Navbar blur on scroll
 window.addEventListener("scroll", () => {
     const navbar = document.querySelector(".navbar");
@@ -201,11 +205,16 @@ window.addEventListener("load", () => {
       `Date: ${date}`;
   
     // 📲 WhatsApp (MOBILE SAFE)
-const whatsappURL =
-`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
-
-window.location.href = whatsappURL;
-
+    const whatsappURL =
+    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
+  
+  if (isIOS()) {
+    // iOS Safari prefers location replace
+    window.location.replace(whatsappURL);
+  } else {
+    window.location.href = whatsappURL;
+  }
+  
   
     // 📧 Email
     const emailAddress = "dinaganethusahan@gmail.com";
