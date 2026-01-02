@@ -895,7 +895,7 @@
 
   .center-logo {
     position: absolute;
-    top: 150px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
     pointer-events: none;
@@ -908,6 +908,7 @@
   }
 
   .brand-name {
+    top: 200px;
     font-size: 16px;
     letter-spacing: 2px;
   }
