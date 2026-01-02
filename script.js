@@ -168,6 +168,10 @@ window.addEventListener("load", () => {
  
   
   const bookingForm = document.getElementById("bookingForm");
+  const bookingSuccess = document.getElementById("bookingSuccess");
+  if (bookingSuccess) {
+    bookingSuccess.style.display = "none";
+  }
 
   bookingForm.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -182,9 +186,13 @@ window.addEventListener("load", () => {
       return;
     }
   
+    // ✅ HIDE FORM → SHOW SUCCESS
+    bookingForm.style.display = "none";
+    bookingSuccess.style.display = "block";
+    bookingSuccess.classList.add("active");
+  
     // 📲 WhatsApp
     const whatsappNumber = "94762864248";
-  
     const whatsappText =
       `📸 New Booking Request\n\n` +
       `Name: ${name}\n` +
@@ -192,10 +200,12 @@ window.addEventListener("load", () => {
       `Service: ${service}\n` +
       `Date: ${date}`;
   
-    window.open(
-      `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`,
-      "_blank"
-    );
+    setTimeout(() => {
+      window.open(
+        `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`,
+        "_blank"
+      );
+    }, 1200);
   
     // 📧 Email
     const emailAddress = "dinaganethusahan@gmail.com";
@@ -206,11 +216,19 @@ window.addEventListener("load", () => {
     setTimeout(() => {
       window.location.href =
         `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    }, 400);
+    }, 1600);
   
-    bookingPanel.classList.remove("active");
-    bookingForm.reset();
+    // 🔁 CLOSE PANEL AFTER SUCCESS
+    setTimeout(() => {
+      bookingPanel.classList.remove("active");
+      bookingForm.reset();
+      bookingForm.style.display = "block";
+      bookingSuccess.style.display = "none";
+    }, 4000);
   });
+  
+  
+   
   
   
   // Mobile gallery tap interaction
