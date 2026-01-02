@@ -200,12 +200,12 @@ window.addEventListener("load", () => {
       `Service: ${service}\n` +
       `Date: ${date}`;
   
-    setTimeout(() => {
-      window.open(
-        `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`,
-        "_blank"
-      );
-    }, 1200);
+    // 📲 WhatsApp (MOBILE SAFE)
+const whatsappURL =
+`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
+
+window.location.href = whatsappURL;
+
   
     // 📧 Email
     const emailAddress = "dinaganethusahan@gmail.com";
