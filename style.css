@@ -547,21 +547,26 @@
     padding: 26px;
     border-radius: 28px;
 
-    /* Sleek glass background */
-    background: rgba(55, 54, 54, 0.05);
+
+
+
+
+    
+
+    background: rgba(0, 0, 0, 0.6); /* dark frosted glass */
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* subtle light border */
 
     transform-style: preserve-3d;
     transition: transform 0.2s ease, box-shadow 0.4s ease;
 
     /* Soft premium shadow */
     box-shadow:
-      0 10px 20px rgba(0, 0, 0, 0.4),
+      0 10px 20px rgba(0, 0, 0, 0.7),
       0 4px 8px rgba(255, 255, 255, 0.05);
 }
 
-/* Subtle metallic edge */
+/* Subtle metallic edge – dark style */
 .card-inner::before {
     content: "";
     position: absolute;
@@ -569,24 +574,24 @@
     border-radius: inherit;
     background: linear-gradient(
         135deg,
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.1)
+        rgba(255, 255, 255, 0.05),
+        rgba(0, 0, 0, 0.3)
     );
     pointer-events: none;
     z-index: -1;
 }
 
-/* Glass reflection */
+/* Glass reflection – dark style */
 .glass-reflection {
     position: absolute;
     inset: 0;
     border-radius: inherit;
     background: linear-gradient(
         120deg,
-        rgba(13, 13, 13, 0.15),
-        transparent 70%
+        rgba(255, 255, 255, 0.08),
+        rgba(0, 0, 0, 0.6) 70%
     );
-    opacity: 0.1;
+    opacity: 0.15;
     pointer-events: none;
 }
 
@@ -594,14 +599,14 @@
 .card-inner h3 {
     font-size: 24px;
     font-weight: 600;
-    color: #000000; /* Soft gold */
+    color: #ffffff; /* Soft gold */
     letter-spacing: 0.5px;
     margin-bottom: 8px;
 }
 
 .card-inner p {
     font-size: 14px;
-    color: rgba(32, 32, 32, 0.75);
+    color: rgba(255, 255, 255, 0.75);
     line-height: 1.5;
 }
 
@@ -610,7 +615,7 @@
     background: linear-gradient(
         to right,
         transparent,
-        rgba(64, 64, 64, 0.4),
+        #fffdfd66,
         transparent
     );
     margin: 14px 0;
@@ -631,7 +636,7 @@
     display: grid;
     place-items: center;
     border-radius: 50%;
-    background: rgba(255,255,255,0.05);
+    background: rgba(222, 221, 221, 0.05);
     box-shadow: inset 0 0 5px rgba(255,255,255,0.1);
     transition: 0.3s ease;
     overflow: hidden; /* ensures images stay within the circle */
